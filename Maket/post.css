@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}  
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+} 
+.navlist li{
+    margin: 20px;
+    font-size: 20px;
+    padding-top: 26px;
+    padding-bottom: 30px;
+    display: inline;
+}
+.navlist a{
+    text-decoration: none;
+    color: black;
+    font-family: Lato;
+    font-size: 20px;  
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+header{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    height: 80px;
+}
+.navlist{
+    display: inline;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: 60px;
+}
+header span{
+    font-size: 24px;
+    margin:0;
+    padding-left: 12px;
+}
+header img{
+    margin: 0;
+    padding-left: 60px;
+}
+.active{
+    font-weight: bold;
+    text-decoration: underline !important;
+}
+.container {
+    display: grid;
+    /* border: 1px solid black; */
+    margin: 2vh 4% auto 4%;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "post post"
+    "first second";
+    column-gap: 7%;
+    row-gap: 50px;
+    
+}
+.cell {
+    /* border: 1px black solid; */
+} 
+.cell#cell1 {
+    background-color: white;
+    color: black;
+    /* border: 1px solid blue; */
+    grid-area: post;
+   
+}
+.cell#cell2 {
+    background-color: white;
+    color: black;
+    /* border: 1px solid greenyellow; */
+    grid-area: first;
+}
+.cell#cell3 {
+    background-color: white;
+    color: black;
+    /* border: 1px solid red; */
+    grid-area: second;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.heading h1{
+    display: inline-block;
+    font-size: 24px;
+    }
+#postdate {
+    display: inline-block;
+    font-size: 14px;
+}
+.maincont {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.maincont p {
+    margin-left: 35px;
+}
+.maincont img {
+    width: 100%;
+    max-height: auto;
+    object-fit: contain;
+}
+.botcont {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 15px auto 0 10px;
+}
+.botcont p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto 10px auto 10px;
+}
+#sub {
+    margin-left: 13vw;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    width: 180px;
+    height: 30px;
+}
+.botcont span {
+    margin: auto 0 auto auto;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ubtn{
+    background: url(images/Polygon\ \(1\).png), url(images/Ellipse\ \(1\).png);
+    height: 32px;
+    width: 32px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 8px 6px, center;
+    border: none;
+    padding: 0;
+    -webkit-filter: brightness(100%);
+}
+.ubtn:active{
+    -webkit-filter: brightness(70%);
+    border-radius: 50%;
+}
+.dbtn:active{
+    -webkit-filter: brightness(70%);
+    border-radius: 50%;
+}
+.dbtn{
+    background: url(images/Polygon\ \(2\).png), url(images/Ellipse\ \(2\).png);
+    height: 32px;
+    width: 32px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 7px 10px, center;
+    border: none;
+    
+    
+}
+.cell#cell2 label, textarea {
+    display: block;
+}
+.cell#cell2 form {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+#commlabel {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto 10px 0;
+    text-align: left;
+}
+#txtcomm {
+    height: 110px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid black;
+    resize: none;
+}
+#comsubmit {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 6px;
+    color: white;
+    height: 30px;
+    width: 150px;
+    margin: 15px 0 auto auto;
+}
+.cell#cell2 hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    padding-bottom: 15px;
+    
+}
+.commhead {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.commhead p{
+    display: inline-block;
+}
+.commhead img{
+    margin: 0;
+    padding: 0;
+}
+.commbody {
+    display: flex;
+    flex-direction: column;
+}
+.commain {
+    text-align: left;
+    
+}
+.commainhead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.comname {
+    font-size: 14px;
+    font-weight: bold;
+}
+.comdate {
+    font-size: 12px;
+}
+.commain p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.commain button{
+    display: block;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    margin: auto 2% 13px auto;
+}
+.cell#cell3 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1%;
+    margin-bottom: 20px;
+}
+.otherposts {
+    display: flex;
+    flex-direction: column;
+}
+.post {
+    display: block;
+    height: fit-content;
+    width: 100%;
+    background-color: #fffcfc;
+    border: px solid rgba(228, 228, 228, 0.96);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+.playbtn{
+    background-image: url(images/Polygon\ 1.png);
+    height: 32px;
+    width: 32px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    border: none;
+    margin: 8px 26px 20px auto;
+    border-radius: 50%;
+
+}
+.playbtn:hover{
+    background-image: url(images/Polygon1\(2\).png);
+}
+.pheader {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+.post hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e4e4e4;
+    margin: 15px 2% 15px 2%;
+}
+.postimg {
+    margin-left:2%;
+    margin-right: 2%;
+    width: 96%;
+    max-height: auto;
+    object-fit: contain;
+}
+.post p {
+    margin: 5px auto 10px 4%;
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+.vote {
+    display: flex;
+    margin-left: 4%;
+    padding: 0;
+    align-items: center;
+
+}
+.vote p{
+    font-size: 24px;
+    margin: 0 10px 0 10px;
+}
